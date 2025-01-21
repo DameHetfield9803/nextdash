@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "../../../../../hooks/use-toast";
 import posts from "@/data/posts";
 
+export const runtime = 'edge';
+
 const formSchema = z.object({
     title: z.string().min(1, { message: 'Title is required' }),
     body: z.string().min(1, { message: 'Body is required' }),
